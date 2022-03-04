@@ -86,6 +86,14 @@ public class Test : MonoBehaviour
 
         decimal myMoney = 3_000.5m;
         Debug.Log($"myMoney:{myMoney}");
+
+        LFloat floatValue = new LFloat(5);
+        Debug.Log($"floatValue:{floatValue.ToString()}, hashCode:{floatValue.GetHashCode()}");
+        Debug.Log($"floatValue ToInt:{floatValue.ToInt()}, ToLong:{floatValue.ToFloat()}");
+        Debug.Log($"floatValue Floor:{floatValue.Floor()}");
+
+        LFloat floatValue2 = new LFloat(false, -5.2f);
+        Debug.Log($"floatValue2 Floor:{floatValue2.Floor()}");
     }
     
     // Update is called once per frame
